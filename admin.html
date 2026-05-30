@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARAESTRA 청주 | 갤러리 관리</title>
+<meta name="description" content="갤러리 게시물 작성">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="subpage">
+<header id="header">
+  <a href="index.html" class="logo"><span class="crest"></span>PARAESTRA</a>
+  <button class="nav-toggle" id="navToggle" aria-label="menu">&#9776;</button>
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">Master</a>
+    <a href="program.html">Program</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<section class="page-top">
+  <div class="pt-inner page-fade">
+    <div class="pt-eye">ADMIN</div>
+    <h1>갤러리 작성</h1>
+    <div class="pt-vline"></div>
+    <div class="pt-ko">사진과 글을 등록합니다</div>
+  </div>
+</section>
+
+<section style="background:var(--bg);min-height:60vh">
+  <div class="wrap" style="max-width:760px">
+
+    <!-- 비밀번호 잠금 화면 -->
+    <div id="lockView" class="admin-lock">
+      <div class="lock-box">
+        <div class="lock-title">관리자 확인</div>
+        <p class="lock-desc">게시물을 작성하려면 비밀번호를 입력하세요.</p>
+        <input type="password" id="pwInput" class="adm-input" placeholder="비밀번호" autocomplete="current-password">
+        <button id="pwBtn" class="adm-btn">확인</button>
+        <div id="pwErr" class="lock-err"></div>
+      </div>
+    </div>
+
+    <!-- 작성 폼 (잠금 해제 후 표시) -->
+    <div id="formView" class="admin-form" style="display:none">
+      <label class="adm-label">제목</label>
+      <input type="text" id="postTitle" class="adm-input" placeholder="예: 2026 동계 수련회">
+
+      <label class="adm-label">사진 (여러 장 선택 가능)</label>
+      <input type="file" id="postFiles" class="adm-file" accept="image/*" multiple>
+      <div id="preview" class="adm-preview"></div>
+
+      <label class="adm-label">짧은 글 (선택)</label>
+      <textarea id="postBody" class="adm-textarea" rows="3" placeholder="간단한 설명을 적어주세요 (비워도 됩니다)"></textarea>
+
+      <button id="submitBtn" class="adm-btn adm-btn-gold">게시물 올리기</button>
+      <div id="submitMsg" class="adm-msg"></div>
+
+      <hr class="adm-hr">
+      <div class="adm-list-head">등록된 게시물 <span id="listCount"></span></div>
+      <div id="adminList" class="adm-list"></div>
+    </div>
+
+  </div>
+</section>
+
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="admin.js"></script>
+<footer>
+  <div class="crest"></div>
+  <div class="flogo">PARAESTRA KOREA HQ</div>
+  <div class="ko">파라에스트라 코리아 총본관 · 청주</div>
+  <div class="copy">&copy; 2026 PARAESTRA CHEONGJU. ALL RIGHTS RESERVED.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

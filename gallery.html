@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARAESTRA 청주 | 갤러리</title>
+<meta name="description" content="파라에스트라 청주 도장의 순간들. 훈련과 대회의 기록.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="subpage">
+<header id="header">
+  <a href="index.html" class="logo"><span class="crest"></span>PARAESTRA</a>
+  <button class="nav-toggle" id="navToggle" aria-label="menu">&#9776;</button>
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">Master</a>
+    <a href="program.html">Program</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<section class="page-top">
+  <div class="pt-inner page-fade">
+    <div class="pt-eye">04 — Gallery</div>
+    <h1>GALLERY</h1>
+    <div class="pt-vline"></div>
+    <div class="pt-ko">도장의 기록</div>
+  </div>
+</section>
+
+<section class="gallery" style="background:var(--bg);min-height:60vh">
+  <div class="wrap">
+    <!-- 로딩 / 빈 상태 / 그리드 -->
+    <div id="galStatus" class="gal-status">불러오는 중...</div>
+    <div id="galGrid" class="gal-feed"></div>
+  </div>
+</section>
+
+<!-- 사진 확대 보기 (라이트박스) -->
+<div id="lightbox" class="lightbox">
+  <button class="lb-close" id="lbClose">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev">&lsaquo;</button>
+  <button class="lb-nav lb-next" id="lbNext">&rsaquo;</button>
+  <div class="lb-stage"><img id="lbImg" src="" alt=""></div>
+  <div class="lb-caption"><div class="lb-title" id="lbTitle"></div><div class="lb-count" id="lbCount"></div></div>
+</div>
+
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="gallery.js"></script>
+<footer>
+  <div class="crest"></div>
+  <div class="flogo">PARAESTRA KOREA HQ</div>
+  <div class="ko">파라에스트라 코리아 총본관 · 청주</div>
+  <div class="copy">&copy; 2026 PARAESTRA CHEONGJU. ALL RIGHTS RESERVED.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

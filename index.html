@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARAESTRA 청주 | 파라에스트라 코리아 총본관</title>
+<meta name="description" content="충북 최초 주짓수×종합격투기 체육관. 파라에스트라 코리아 총본관, 블랙벨트 2단 전용재 총관장 직접지도.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+  <div class="ring"></div>
+  <img class="intro-logo" src="logo.png" alt="PARAESTRA">
+  <div class="frameLine"></div>
+  <div class="sub">Jiu-Jitsu &times; MMA · Cheongju</div>
+</div>
+
+<!-- ENTER GATE -->
+<div id="gate">
+  <div class="gate-frame"></div>
+  <div class="gate-inner">
+    <img class="gate-logo" src="logo.png" alt="PARAESTRA">
+    <div class="g-name">PARAESTRA</div>
+    <div class="g-sub">Jiu-Jitsu &times; MMA · Cheongju</div>
+    <button class="enter-btn" id="enterBtn"><span>ENTER</span></button>
+    <div class="g-hint">소리와 함께 영상이 재생됩니다</div>
+  </div>
+</div>
+
+<!-- FULLSCREEN FILM -->
+<div id="film">
+  <div class="film-stage">
+    <div class="film-frame"></div>
+    <video id="filmVideo" playsinline preload="auto">
+      <source src="intro.mp4" type="video/mp4">
+    </video>
+    <!-- 시작 타이틀 카드 (영상 시작 전 잠깐 표시) -->
+    <div class="film-title" id="filmTitle">
+      <div class="ft-inner">
+        <div class="ft-eye">ARCHIVE FOOTAGE</div>
+        <div class="ft-main">ADCC ASIA</div>
+        <div class="ft-line"></div>
+        <div class="ft-sub">ABU DHABI COMBAT CLUB &middot; 2007</div>
+        <div class="ft-ko">아시아 예선</div>
+      </div>
+    </div>
+    <button class="replay" id="replayBtn">&#8635; 다시보기</button>
+    <button class="skip" id="skipBtn">홈으로 들어가기 <span class="arrow">&rarr;</span></button>
+  </div>
+</div>
+
+<!-- NAV -->
+<header id="header">
+  <a href="index.html" class="logo"><img class="logo-medal" src="logo.png" alt="">PARAESTRA</a>
+  <button class="nav-toggle" id="navToggle" aria-label="menu">&#9776;</button>
+  <nav id="nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">Master</a>
+    <a href="program.html">Program</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-fallback"></div>
+  <div class="hero-overlay"></div>
+  <img class="hero-watermark" src="logo_watermark.png" alt="">
+  <div class="hero-frame"></div>
+  <div class="hero-content">
+    <div class="eye">PARAESTRA KOREA HQ · 총본관</div>
+    <h1>JIU-JITSU <span class="gold-grad">&amp; MMA</span></h1>
+    <div class="vline"></div>
+    <div class="tag">충북 최초 주짓수 &times; 종합격투기 체육관</div>
+    <div class="tag-ko">역사와 전통이 있는 체육관 · 파라에스트라 청주</div>
+    <div class="hero-cta">
+      <a href="program.html" class="btn btn-gold">Program</a>
+      <a href="contact.html" class="btn btn-line">오시는 길</a>
+    </div>
+  </div>
+  <div class="scroll-ind">Scroll<div class="bar"></div></div>
+</section>
+
+<!-- HOME LINKS -->
+<section class="home-links">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">PARAESTRA CHEONGJU</span>
+      <h2 class="sec-title">격투가 양성소, 청주</h2>
+    </div>
+    <div class="hl-grid">
+      <a href="about.html" class="hl-card reveal">
+        <span class="hl-num">01</span>
+        <h3>Master</h3>
+        <p>파라에스트라 코리아 총관장 전용재, 그리고 스승 나카이 유키로 이어지는 계보.</p>
+        <div class="hl-go">관장 소개 &rarr;</div>
+      </a>
+      <a href="program.html" class="hl-card reveal">
+        <span class="hl-num">02</span>
+        <h3>Program</h3>
+        <p>입문자도 쉽게 배우는 주짓수, 실전에 가장 가까운 종합격투기(MMA).</p>
+        <div class="hl-go">프로그램 보기 &rarr;</div>
+      </a>
+      <a href="schedule.html" class="hl-card reveal">
+        <span class="hl-num">03</span>
+        <h3>Schedule</h3>
+        <p>1부부터 4부까지, 수준별 그룹 수업으로 운영되는 수업 시간표.</p>
+        <div class="hl-go">시간표 보기 &rarr;</div>
+      </a>
+      <a href="gallery.html" class="hl-card reveal">
+        <span class="hl-num">04</span>
+        <h3>Gallery</h3>
+        <p>도장의 순간들. 훈련과 대회, 그리고 함께한 사람들의 기록.</p>
+        <div class="hl-go">갤러리 보기 &rarr;</div>
+      </a>
+      <a href="contact.html" class="hl-card reveal">
+        <span class="hl-num">05</span>
+        <h3>Contact</h3>
+        <p>충북 청주시 흥덕구 가경동. 오시는 길과 SNS 안내.</p>
+        <div class="hl-go">오시는 길 &rarr;</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img class="footer-medal" src="logo.png" alt="PARAESTRA">
+  <div class="flogo">PARAESTRA KOREA HQ</div>
+  <div class="ko">파라에스트라 코리아 총본관 · 청주</div>
+  <div class="copy">&copy; 2026 PARAESTRA CHEONGJU. ALL RIGHTS RESERVED.</div>
+</footer>
+
+<script src="script.js"></script>
+<script>initHome();</script>
+</body>
+</html>
