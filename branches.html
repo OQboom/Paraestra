@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>파라에스트라 청주 | 전국 지점 안내</title>
+<meta name="description" content="파라에스트라 전국 지점 안내. 청주·충북·수도권·대구·울산·제주 등 전국에 위치한 파라에스트라 주짓수·MMA 도장 목록.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* ── 지점 페이지 전용 스타일 ── */
+.branches {
+  padding: 6rem 0 8rem;
+  background: var(--bg);
+}
+.region-block {
+  margin-bottom: 4rem;
+}
+.region-label {
+  font-family: Oswald, sans-serif;
+  font-weight: 300;
+  font-size: .72rem;
+  letter-spacing: .22em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid rgba(212,175,55,.25);
+}
+.branch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.2rem;
+}
+.branch-card {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,.06);
+  padding: 1.5rem 1.6rem;
+  position: relative;
+  transition: border-color .25s, transform .25s;
+}
+.branch-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 2px; height: 0;
+  background: var(--gold);
+  transition: height .3s ease;
+}
+.branch-card:hover {
+  border-color: rgba(212,175,55,.35);
+  transform: translateY(-3px);
+}
+.branch-card:hover::before { height: 100%; }
+
+.branch-card.hq {
+  border-color: rgba(212,175,55,.45);
+  background: rgba(212,175,55,.05);
+}
+.branch-card.hq::before { height: 100%; background: var(--gold); }
+
+.bc-badge {
+  font-family: Oswald, sans-serif;
+  font-size: .62rem;
+  letter-spacing: .18em;
+  color: var(--bg);
+  background: var(--gold);
+  padding: .15rem .55rem;
+  display: inline-block;
+  margin-bottom: .8rem;
+}
+.bc-name {
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 1.08rem;
+  letter-spacing: .06em;
+  color: var(--fg);
+  margin-bottom: .35rem;
+  line-height: 1.35;
+}
+.bc-addr {
+  font-size: .8rem;
+  color: var(--fg2);
+  margin-bottom: .75rem;
+  line-height: 1.55;
+}
+.bc-tel {
+  font-family: Oswald, sans-serif;
+  font-weight: 300;
+  font-size: .85rem;
+  letter-spacing: .08em;
+  color: var(--gold);
+}
+.bc-tel a {
+  color: inherit;
+  text-decoration: none;
+}
+.bc-tel a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .branch-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body class="subpage">
+<header id="header">
+  <a href="index.html" class="logo"><img class="logo-medal" src="logo.png" alt="">PARAESTRA</a>
+  <button class="nav-toggle" id="navToggle" aria-label="menu">&#9776;</button>
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">Master</a>
+    <a href="program.html">Program</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="branches.html" class="active">Branches</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-top">
+  <div class="pt-inner page-fade">
+    <div class="pt-eye">Network — 전국 지점</div>
+    <h1>BRANCHES</h1>
+    <div class="pt-vline"></div>
+    <div class="pt-ko">파라에스트라 전국 도장 안내</div>
+  </div>
+</section>
+
+<section class="branches">
+  <div class="wrap">
+
+    <!-- 청주 본관 -->
+    <div class="region-block reveal">
+      <div class="region-label">Cheongju HQ · 청주 본관</div>
+      <div class="branch-grid">
+        <div class="branch-card hq">
+          <div class="bc-badge">KOREA HQ · 총본관</div>
+          <div class="bc-name">파라에스트라 가경본관</div>
+          <div class="bc-addr">충청북도 청주시 흥덕구 가경동 1189번지 지하 1층</div>
+          <div class="bc-tel"><a href="tel:05071320-7433">0507-1320-7433</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 청주 지점 -->
+    <div class="region-block reveal">
+      <div class="region-label">Cheongju · 청주</div>
+      <div class="branch-grid">
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 복대점</div>
+          <div class="bc-addr">충북 청주시 흥덕구 복대동</div>
+          <div class="bc-tel"><a href="tel:043-233-8913">043-233-8913</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라주짓수 지웰점</div>
+          <div class="bc-addr">충북 청주시 흥덕구 복대동</div>
+          <div class="bc-tel"><a href="tel:0507-1313-7433">0507-1313-7433</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 봉명</div>
+          <div class="bc-addr">충북 청주시 흥덕구 봉명동</div>
+          <div class="bc-tel"><a href="tel:0507-1377-1675">0507-1377-1675</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 주짓수 MMA 산남</div>
+          <div class="bc-addr">충북 청주시 서원구 산남동</div>
+          <div class="bc-tel"><a href="tel:0507-1353-0951">0507-1353-0951</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 주짓수 분평동</div>
+          <div class="bc-addr">충북 청주시 서원구 분평동</div>
+          <div class="bc-tel"><a href="tel:0507-1344-1040">0507-1344-1040</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 율량 주짓수</div>
+          <div class="bc-addr">충북 청주시 청원구 율량동</div>
+          <div class="bc-tel"><a href="tel:043-211-1517">043-211-1517</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 용암 주짓수</div>
+          <div class="bc-addr">충북 청주시 상당구 용암동</div>
+          <div class="bc-tel"><a href="tel:0507-1486-1163">0507-1486-1163</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 오송주짓수</div>
+          <div class="bc-addr">충북 청주시 흥덕구 오송읍</div>
+          <div class="bc-tel"><a href="tel:0507-1379-6943">0507-1379-6943</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">더베스트태권도&amp;파라에스트라주짓수</div>
+          <div class="bc-addr">충북 청주시 흥덕구 운천동</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 충북 기타 -->
+    <div class="region-block reveal">
+      <div class="region-label">Chungbuk · 충북</div>
+      <div class="branch-grid">
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라진천</div>
+          <div class="bc-addr">충북 진천군 진천읍</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 수도권 -->
+    <div class="region-block reveal">
+      <div class="region-label">Seoul &amp; Gyeonggi · 수도권</div>
+      <div class="branch-grid">
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라하계주짓수mma</div>
+          <div class="bc-addr">서울 노원구 하계동</div>
+          <div class="bc-tel"><a href="tel:0507-1345-0309">0507-1345-0309</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 수락주짓수</div>
+          <div class="bc-addr">서울 노원구 상계동</div>
+          <div class="bc-tel"><a href="tel:0507-1307-7531">0507-1307-7531</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 분당</div>
+          <div class="bc-addr">경기 성남시 분당구 서현동</div>
+          <div class="bc-tel"><a href="tel:031-705-8233">031-705-8233</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 판교 주짓수</div>
+          <div class="bc-addr">경기 성남시 분당구 운중동</div>
+          <div class="bc-tel"><a href="tel:0507-1486-0853">0507-1486-0853</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 (김포)</div>
+          <div class="bc-addr">경기 김포시 운양동</div>
+          <div class="bc-tel"><a href="tel:031-986-0220">031-986-0220</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 양주 주짓수 MMA</div>
+          <div class="bc-addr">경기 양주시 옥정동</div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">주짓수파라에스트라 경기광주</div>
+          <div class="bc-addr">경기 광주시 신현동</div>
+          <div class="bc-tel"><a href="tel:0507-1323-8154">0507-1323-8154</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 주짓수 &amp; 무림합기도</div>
+          <div class="bc-addr">경기 광주시 탄벌동</div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 주짓수 MMA (오산)</div>
+          <div class="bc-addr">경기 오산시 누읍동</div>
+          <div class="bc-tel"><a href="tel:0507-1465-7274">0507-1465-7274</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라세교 주짓수 MMA</div>
+          <div class="bc-addr">경기 오산시 수청동</div>
+          <div class="bc-tel"><a href="tel:0507-1351-8453">0507-1351-8453</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 충남 -->
+    <div class="region-block reveal">
+      <div class="region-label">Chungnam · 충남</div>
+      <div class="branch-grid">
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 주짓수 (아산)</div>
+          <div class="bc-addr">충남 아산시 실옥동</div>
+          <div class="bc-tel"><a href="tel:0507-1462-2138">0507-1462-2138</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 대구 -->
+    <div class="region-block reveal">
+      <div class="region-label">Daegu · 대구</div>
+      <div class="branch-grid">
+        <div class="branch-card">
+          <div class="bc-name">대구 주짓수 파라에스트라</div>
+          <div class="bc-addr">대구 동구 신서동</div>
+          <div class="bc-tel"><a href="tel:0507-1313-5836">0507-1313-5836</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">대구죽전파라에스트라주짓수mma</div>
+          <div class="bc-addr">대구 달서구 장기동</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 울산 -->
+    <div class="region-block reveal">
+      <div class="region-label">Ulsan · 울산</div>
+      <div class="branch-grid">
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 천곡 주짓수</div>
+          <div class="bc-addr">울산 북구 천곡동</div>
+          <div class="bc-tel"><a href="tel:0507-1363-9488">0507-1363-9488</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">북구주짓수파라에스트라</div>
+          <div class="bc-addr">울산 북구 연암동</div>
+          <div class="bc-tel"><a href="tel:0507-1363-4124">0507-1363-4124</a></div>
+        </div>
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 전하</div>
+          <div class="bc-addr">울산 동구 전하동</div>
+          <div class="bc-tel"><a href="tel:0507-1369-1040">0507-1369-1040</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 전남 -->
+    <div class="region-block reveal">
+      <div class="region-label">Jeonnam · 전남</div>
+      <div class="branch-grid">
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 주짓수MMA킥복싱</div>
+          <div class="bc-addr">전남 무안군 삼향읍</div>
+          <div class="bc-tel"><a href="tel:0507-1323-1094">0507-1323-1094</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 제주 -->
+    <div class="region-block reveal">
+      <div class="region-label">Jeju · 제주</div>
+      <div class="branch-grid">
+        <div class="branch-card">
+          <div class="bc-name">파라에스트라 신서귀포주짓수</div>
+          <div class="bc-addr">제주 서귀포시 법환동</div>
+          <div class="bc-tel"><a href="tel:0507-1473-2245">0507-1473-2245</a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <img class="footer-medal" src="logo.png" alt="PARAESTRA">
+  <div class="flogo">PARAESTRA KOREA HQ</div>
+  <div class="ko">파라에스트라 코리아 총본관 · 청주</div>
+  <div class="copy">&copy; 2026 PARAESTRA CHEONGJU. ALL RIGHTS RESERVED.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
