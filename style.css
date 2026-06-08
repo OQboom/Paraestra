@@ -170,7 +170,7 @@
 
   /* ============ HERO ============ */
   .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
-  .hero-video-wrap{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none}
+  .hero-video-wrap{position:absolute;inset:0;overflow:hidden;z-index:1;pointer-events:none}
   .hero-video-wrap iframe{position:absolute;top:50%;left:50%;width:100vw;height:56.25vw;min-height:100vh;min-width:177.78vh;transform:translate(-50%,-50%);filter:grayscale(.4) brightness(.55) contrast(1.1);pointer-events:none}
   .hero-fallback{
     position:absolute;inset:0;z-index:0;
@@ -184,12 +184,12 @@
     content:'';position:absolute;inset:0;
     background:radial-gradient(ellipse at 50% 45%,rgba(197,165,114,.1),transparent 60%);
   }
-  .hero-overlay{position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at center,transparent 30%,rgba(13,14,16,.75) 95%)}
-  .hero-frame{position:absolute;inset:clamp(1.2rem,3vw,2.4rem);border:1px solid var(--line);z-index:2;pointer-events:none}
+  .hero-overlay{position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse at center,transparent 30%,rgba(13,14,16,.75) 95%)}
+  .hero-frame{position:absolute;inset:clamp(1.2rem,3vw,2.4rem);border:1px solid var(--line);z-index:3;pointer-events:none}
   .hero-frame::before,.hero-frame::after{content:'';position:absolute;width:14px;height:14px;border:1px solid var(--gold)}
   .hero-frame::before{top:-1px;left:-1px;border-right:none;border-bottom:none}
   .hero-frame::after{bottom:-1px;right:-1px;border-left:none;border-top:none}
-  .hero-content{position:relative;z-index:3;padding:0 1.4rem;max-width:880px}
+  .hero-content{position:relative;z-index:4;padding:0 1.4rem;max-width:880px}
   .hero .eye{font-family:'Oswald';font-weight:300;letter-spacing:.5em;color:var(--gold);font-size:clamp(.6rem,1.6vw,.9rem);text-transform:uppercase;opacity:0;animation:fadeUp .9s ease .2s forwards}
   .hero h1{font-family:'Bebas Neue';font-size:clamp(3.5rem,12vw,8.5rem);line-height:.86;letter-spacing:.04em;color:var(--paper);margin:1.4rem 0;opacity:0;animation:fadeUp 1s ease .4s forwards}
   .hero .vline{width:54px;height:1px;background:var(--gold);margin:0 auto;opacity:0;animation:fadeUp .9s ease .65s forwards}
